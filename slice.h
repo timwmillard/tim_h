@@ -39,7 +39,7 @@ for (int i=0; i<slice_len(&s); i++) {
         }                                                                      \
     } while (0)
 #define slice_append(s, item) do {                                             \
-        slice_grow(s, 1);                                                    \
+        slice_grow(s, 1);                                                      \
         (s)->array[(s)->len++] = item;                                         \
     } while (0)
 #define slice_append_array(s, arr, arrlen) do {                                \
